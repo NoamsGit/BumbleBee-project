@@ -1,0 +1,48 @@
+
+service: BumbleBee-Back
+
+frameworkVersion: '2'
+
+plugins:
+  - serverless-python-requirements
+
+custom:
+  pythonRequirements:
+    dockerizePip: non-linux
+
+provider:
+  name: aws
+  iamRoleStatements:
+    - Effect: 'Allow'
+      Action:
+        - 's3:GetObject'
+        - 's3:ListBucket'
+      Resource: 'arn:aws:s3:::bumblebee-bucket2/*'
+    - Effect: 'Allow'
+      Action:
+        - 's3:PutObject'
+      Resource: 'arn:aws:s3:::bumblebee-bucket3/*'
+
+#      #Resource: 'arn:aws:dynamodb:us-east-1:*:*' ###################################3 arn:aws:s3:::bucket_name/key_name
+      
+  runtime: python3.8
+  lambdaHashingVersion: 20201221
+  region: eu-west-1
+  stage: "noam-dev"
+
+
+functions:
+  parse_input:
+    handler: handler.parse_input
+#    maximumRetryAttempts: 1
+    timeout: 40
+    events:
+      - s3:
+          bucket: bumblebee-bucket2
+          event: s3:ObjectCreated:*
+          rules:
+#            - prefix:
+            - suffix: .trig2
+          existing: true
+
+# resources:
