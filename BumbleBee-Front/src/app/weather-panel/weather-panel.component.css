@@ -1,0 +1,10 @@
+.weather-panel-content {
+  background-color: rgb(255, 255, 255);
+}
+
+.weather-panel-content img {
+  border-radius: 0;
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+}

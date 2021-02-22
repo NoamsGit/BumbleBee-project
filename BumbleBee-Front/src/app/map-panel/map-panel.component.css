@@ -1,0 +1,14 @@
+.map-panel-content {
+  background-color: rgb(255, 255, 255);
+  width: 344px;
+  height: 200px;
+}
+
+.map-panel-content img {
+  border-radius: 0;
+
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  overflow-y: hidden;
+}

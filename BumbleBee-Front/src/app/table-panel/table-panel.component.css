@@ -1,0 +1,10 @@
+.table-panel-content {
+  background-color: rgb(255, 255, 255);
+  width: 538px;
+  height: 100%;
+  font-size: 0.7rem;
+}
+
+.table-panel-body {
+  padding: 10px 10px 0 10px;
+}
