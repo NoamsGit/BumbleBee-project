@@ -5,12 +5,13 @@ import boto3
 from zipfile import ZipFile, is_zipfile
 import io
 import time
+from passwords import AWS_KEY, AWS_SECRET_KEY,MONGODB_URL
 
 
-s3 = boto3.client('s3', aws_access_key_id='AKIAIYQG6AGFMAKBKPTA',
-                  aws_secret_access_key='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')
-cluster = MongoClient(
-        'mongodb+srv://node-rest-shop:node-rest-shop@node-rest-shop.qy06n.mongodb.net/test?retryWrites=true&w=majority')
+ 
+
+s3 = boto3.client('s3', aws_access_key_id=AWS_KEY, aws_secret_access_key=AWS_SECRET_KEY)
+cluster = MongoClient(MONGODB_URL)
 
 
 
