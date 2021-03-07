@@ -198,7 +198,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/BumbleBee-Back/noam-dev/1614006019669-2021-02-22T15:00:19.669Z/BumbleBee-Back.zip"
+                "S3Key": "serverless/BumbleBee-Back/noam-dev/1615133058084-2021-03-07T16:04:18.084Z/BumbleBee-Back.zip"
               },
               "Handler": "handler.parse_input",
               "Runtime": "python3.8",
@@ -216,14 +216,14 @@
               "ParseUnderscoreinputLogGroup"
             ]
           },
-          "ParseUnderscoreinputLambdaVersionWIxf701wcXmFNxSSel5oypgXcxSaHEfcmw9rHUBROhQ": {
+          "ParseUnderscoreinputLambdaVersioneui176igSMsWLwLuGd3JDzjNsLNASv0kYYFlsqx6s": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "ParseUnderscoreinputLambdaFunction"
               },
-              "CodeSha256": "Xgoj10Xq5iRiWFV7plnAJ57G+fViZXinK5f4oYU4fRU="
+              "CodeSha256": "dQ4rdGL17NMz6wXKxFgqjwq3j0s0c6T9KDTyKhGRnzE="
             }
           },
           "ParseUnderscoreinputCustomS31": {
@@ -350,7 +350,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/BumbleBee-Back/noam-dev/1614006019669-2021-02-22T15:00:19.669Z/custom-resources.zip"
+                "S3Key": "serverless/BumbleBee-Back/noam-dev/1615133058084-2021-03-07T16:04:18.084Z/custom-resources.zip"
               },
               "FunctionName": "BumbleBee-Back-noam-dev-custom-resource-existing-s3",
               "Handler": "s3/handler.handler",
@@ -378,7 +378,7 @@
           "ParseUnderscoreinputLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "ParseUnderscoreinputLambdaVersionWIxf701wcXmFNxSSel5oypgXcxSaHEfcmw9rHUBROhQ"
+              "Ref": "ParseUnderscoreinputLambdaVersioneui176igSMsWLwLuGd3JDzjNsLNASv0kYYFlsqx6s"
             }
           }
         }
@@ -499,7 +499,7 @@
         "memory": 1024,
         "runtime": "python3.8",
         "vpc": {},
-        "versionLogicalId": "ParseUnderscoreinputLambdaVersionWIxf701wcXmFNxSSel5oypgXcxSaHEfcmw9rHUBROhQ"
+        "versionLogicalId": "ParseUnderscoreinputLambdaVersioneui176igSMsWLwLuGd3JDzjNsLNASv0kYYFlsqx6s"
       }
     },
     "configValidationMode": "warn",
@@ -527,7 +527,7 @@
     "artifact": "C:\\Users\\owner\\Desktop\\projects\\BumbleBee-project\\BumbleBee-Back\\.serverless\\BumbleBee-Back.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/BumbleBee-Back/noam-dev/1614006019669-2021-02-22T15:00:19.669Z",
+    "artifactDirectoryName": "serverless/BumbleBee-Back/noam-dev/1615133058084-2021-03-07T16:04:18.084Z",
     "artifact": "BumbleBee-Back.zip"
   }
 }
